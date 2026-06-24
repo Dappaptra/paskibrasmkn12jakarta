@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASKIBRA SMKN 12 JAKARTA</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+
+</head>
+<style>
+    /* Hilangkan scrollbar */
+    #prestasiSlider::-webkit-scrollbar {
+        display: none;
+    }
+
+    #prestasiSlider {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+
+<body class="bg-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+
+            <div class="flex justify-between items-center">
+
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <img src="img/logo.png" class="h-12" alt="">
+                    <div>
+                        <h1 class="font-bold text-xl">PASKIBRA</h1>
+                        <p class="text-sm text-gray-500">SMKN 12 JAKARTA</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex gap-8 font-medium">
+                    <li><a href="#beranda" class="hover:text-red-600 transition">Beranda</a></li>
+                    <li><a href="#tentang" class="hover:text-red-600 transition">Tentang Kami</a></li>
+                    <li><a href="#kegiatan" class="hover:text-red-600 transition">Kegiatan</a></li>
+                    <li><a href="#prestasi" class="hover:text-red-600 transition">Prestasi</a></li>
+                    <li><a href="#struktur" class="hover:text-red-600 transition">Struktur</a></li>
+                    <li><a href="#galeri" class="hover:text-red-600 transition">Galeri</a></li>
+                </ul>
+
+                <!-- Mobile Button -->
+                <button id="menuBtn" class="md:hidden text-2xl p-2 rounded-lg hover:bg-gray-100 transition">
+                    ☰
+                </button>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"
+                class="hidden md:hidden mt-4 bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+
+                <ul class="flex flex-col p-2 font-medium">
+
+                    <li>
+                        <a href="#beranda"
+                            class="block px-4 py-3 rounded-xl hover:bg-red-50 hover:text-red-600 transition">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#tentang"
+                            class="block px-4 py-3 rounded-xl hover:bg-red-50 hover:text-red-600 transition">
+                            Tentang Kami
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#kegiatan"
+                            class="block px-4 py-3 rounded-xl hover:bg-red-50 hover:text-red-600 transition">
+                            Kegiatan
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#prestasi"
+                            class="block px-4 py-3 rounded-xl hover:bg-red-50 hover:text-red-600 transition">
+                            Prestasi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#struktur"
+                            class="block px-4 py-3 rounded-xl hover:bg-red-50 hover:text-red-600 transition">
+                            Struktur
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#galeri"
+                            class="block px-4 py-3 rounded-xl hover:bg-red-50 hover:text-red-600 transition">
+                            Galeri
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- HERO -->
+    <section id="beranda" class="hero-bg min-h-screen flex items-center">
+
+        <div class="w-full pl-6 md:pl-16 lg:pl-24 pt-20">
+
+            <p class="text-white tracking-[4px] mb-2">
+                PASUKAN PENGIBAR BENDERA
+            </p>
+
+            <h1 class="text-5xl md:text-8xl font-extrabold text-white">
+                PASKIBRA
+            </h1>
+
+            <h2 class="text-3xl md:text-5xl font-bold text-red-500 mt-2">
+                SMKN 12 JAKARTA
+            </h2>
+
+            <p class="text-white max-w-xl mt-6">
+                Membentuk generasi disiplin, berkarakter,
+                berjiwa nasionalisme tinggi dan siap menjadi
+                teladan bagi lingkungan sekolah maupun masyarakat.
+            </p>
+
+            <a href="#tentang"
+                class="inline-flex items-center gap-2 bg-red-700 hover:bg-red-700 text-white px-6 py-3 rounded-full mt-8 transition">
+                Tentang Kami
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+
+                <!-- KIRI: TEKS -->
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">
+                        Tentang Kami
+                    </h2>
+
+                    <p class="text-gray-600 leading-8">
+                        Paskibra SMKN 12 Jakarta merupakan organisasi yang berfokus pada
+                        pembentukan karakter disiplin, kepemimpinan, tanggung jawab, serta
+                        rasa cinta tanah air melalui berbagai kegiatan pelatihan yang terstruktur.
+                        Selain itu, Paskibra juga menjadi wadah bagi siswa untuk mengembangkan kerja sama tim,
+                        mental yang kuat, dan rasa percaya diri dalam setiap tugas yang dijalankan. Kegiatan utama
+                        meliputi latihan baris-berbaris, pengibaran dan penurunan bendera pada upacara resmi, serta
+                        partisipasi dalam berbagai kompetisi paskibra di tingkat sekolah maupun antar sekolah.
+                    </p>
+                </div>
+
+                <!-- KANAN: GAMBAR -->
+                <div class="flex justify-center md:justify-end">
+                    <img src="img/tentangkami.jpg" alt="Tentang Paskibra"
+                        class="rounded-xl shadow-lg w-full max-w-md object-cover">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    // video
+
+    <div class="bg-red-700 py-20">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <h2 class="text-white text-2xl md:text-3xl font-bold mb-2">
+                Video Pengibaran Bendera
+            </h2>
+
+            <p class="text-white mb-6">
+                Dokumentasi kegiatan pengibaran bendera pada upacara 17 Agustus
+                dalam rangka HUT RI ke-80.
+            </p>
+
+            <div class="aspect-video rounded-xl overflow-hidden shadow-lg">
+                <video id="videoPaskibra" class="w-full h-full object-cover" muted playsinline controls>
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- STATISTIK -->
+    <section class="bg-gray-100 py-20">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                <div class="bg-white p-6 rounded-xl text-center shadow">
+                    <h3 class="counter text-4xl font-bold text-red-600" data-target="50">0</h3>
+                    <p>Anggota Aktif</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl text-center shadow">
+                    <h3 class="counter text-4xl font-bold text-red-600" data-target="25">0</h3>
+                    <p>Prestasi</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl text-center shadow">
+                    <h3 class="counter text-4xl font-bold text-red-600" data-target="2010">0</h3>
+                    <p>Tahun Berdiri</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl text-center shadow">
+                    <h3 class="counter text-4xl font-bold text-red-600" data-target="100">0</h3>
+                    <p>Kegiatan</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--INI KEGIATAN-->
+    <section id="kegiatan" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex justify-between items-center mb-10">
+                <h2 class="text-4xl font-bold">
+                    Kegiatan
+                </h2>
+
+                <a href="kegiatan.html" id="seeAllBtn" class="text-red-600 font-semibold hover:underline">
+                    Lihat Semuanya →
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+
+                <div class="shadow-lg rounded-xl overflow-hidden">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312748/WhatsApp_Image_2026-06-23_at_22.36.02_k2iv4z.jpg" class="w-full h-40 md:h-56 object-cover">
+                    <div class="p-4 md:p-5">
+                        <h3 class="font-bold text-sm md:text-base">Latihan Rutin</h3>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded-xl overflow-hidden">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312744/IMG-20250520-WA0035_1_k23cly.jpg" class="w-full h-40 md:h-56 object-cover">
+                    <div class="p-4 md:p-5">
+                        <h3 class="font-bold text-sm md:text-base">Upacara Bendera</h3>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded-xl overflow-hidden">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312744/IMG-20250720-WA0040_1_st3ifn.jpg" class="w-full h-40 md:h-56 object-cover">
+                    <div class="p-4 md:p-5">
+                        <h3 class="font-bold text-sm md:text-base">Pengambilan Topi Angkatan 24</h3>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded-xl overflow-hidden">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312743/IMG_20260623_231247_bbmptj.jpg" class="w-full h-40 md:h-56 object-cover">
+                    <div class="p-4 md:p-5">
+                        <h3 class="font-bold text-sm md:text-base">Training Center Angkatan 25</h3>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded-xl overflow-hidden">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312747/IMG-20260617-WA0002_1_sfrke1.jpg" class="w-full h-40 md:h-56 object-cover">
+                    <div class="p-4 md:p-5">
+                        <h3 class="font-bold text-sm md:text-base">Pengibaran HUT RI ke-80</h3>
+                    </div>
+                </div>
+
+                <div class="shadow-lg rounded-xl overflow-hidden">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312744/IMG-20250717-WA0022_2_ib27zp.jpg" class="w-full h-40 md:h-56 object-cover">
+                    <div class="p-4 md:p-5">
+                        <h3 class="font-bold text-sm md:text-base">Demo Ekstrakurikuler 2025</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRESTASI -->
+    <section id="prestasi" class="bg-gray-100 py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <h2 class="text-4xl font-bold mb-10">
+                Prestasi
+            </h2>
+
+            <div id="prestasiSlider" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth">
+
+                <!-- Prestasi 1 -->
+                <div class="min-w-full md:min-w-[32%] bg-white shadow-lg rounded-xl overflow-hidden snap-center">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312747/IMG-20250928-WA0059_1_q4od3f.jpg" class="w-full h-56 object-cover">
+                    <div class="p-5 text-center">
+                        <p class="text-sm text-gray-500 mb-3 text-center">Kejuaraan Cabang 2025</p>
+                        <h3 class="font-bold">Juara Utama II</h3>
+                        <h3 class="font-bold">Pembawa Bendera Terbaik II</h3>
+                        <h3 class="font-bold">Pengibar Bendera Terbaik II</h3>
+                    </div>
+                </div>
+
+                <!-- Prestasi 2 -->
+                <div class="min-w-full md:min-w-[32%] bg-white shadow-lg rounded-xl overflow-hidden snap-center">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312747/IMG-20260614-WA0012_1_ncnsse.jpg" class="w-full h-56 object-cover">
+                    <div class="p-5 text-center">
+                        <p class="text-sm text-gray-500 mb-3 text-center">Kejuaraan Cabang 2026</p>
+                        <h3 class="font-bold">Juara Harapan Utama I</h3>
+                        <h3 class="font-bold">Kostum Terbaik I</h3>
+                        <h3 class="font-bold">Danton Terbaik III</h3>
+                    </div>
+                </div>
+
+                <!-- Prestasi 3 -->
+                <div class="min-w-full md:min-w-[32%] bg-white shadow-lg rounded-xl overflow-hidden snap-center">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782313254/IMG_20260623_234001_zdacmu.jpg" class="w-full h-56 object-cover">
+                    <div class="p-5 text-center">
+                        <p class="text-sm text-gray-500 mb-3 text-center">LKBB Nasional Is Me 2026</p>
+                        <h3 class="font-bold">Juara Bina II</h3>
+                    </div>
+                </div>
+
+                <!-- Prestasi 4 -->
+                <div class="min-w-full md:min-w-[32%] bg-white shadow-lg rounded-xl overflow-hidden snap-center">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312746/IMG-20260617-WA0001_1_ag1awv.jpg" class="w-full h-56 object-cover">
+                    <div class="p-5 text-center">
+                        <p class="text-sm text-gray-500 mb-3 text-center">LFPB Damarfest Vol.2 2025</p>
+                        <h3 class="font-bold">Juara Harapan Bina I</h3>
+                        <h3 class="font-bold">Make Up Terbaik II</h3>
+                    </div>
+                </div>
+
+                <!-- Prestasi 5 -->
+                <div class="min-w-full md:min-w-[32%] bg-white shadow-lg rounded-xl overflow-hidden snap-center">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312745/IMG-20260208-WA0042_1_iehiz8.jpg" class="w-full h-56 object-cover">
+                    <div class="p-5 text-center">
+                        <p class="text-sm text-gray-500 mb-3 text-center">LKBB Kilau XI 2026</p>
+                        <h3 class="font-bold">Juara Harapan Purwa II</h3>
+                    </div>
+                </div>
+
+                <!-- Prestasi 6 -->
+                <div class="min-w-full md:min-w-[32%] bg-white shadow-lg rounded-xl overflow-hidden snap-center">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782313197/IMG-20260623-WA0038_poz4hu.jpg" class="w-full h-56 object-cover">
+                    <div class="p-5 text-center">
+                        <p class="text-sm text-gray-500 mb-3 text-center">LKBB Grinvaplus 2026</p>
+                        <h3 class="font-bold">Juara Mula I</h3>
+                    </div>
+                </div>
+
+                <!-- Prestasi 7 -->
+                <div class="min-w-full md:min-w-[32%] bg-white shadow-lg rounded-xl overflow-hidden snap-center">
+                    <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312744/IMG-20250427-WA0087_1_vficmi.jpg" class="w-full h-56 object-cover">
+                    <div class="p-5 text-center">
+                        <p class="text-sm text-gray-500 mb-3 text-center">LKBB Srikandi Paskatara 2025</p>
+                        <h3 class="font-bold">Juara Potensial II</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STRUKTUR ORGANISASI -->
+    <section id="struktur" class="py-24 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <h2 class="text-4xl font-bold mb-10">
+                Pembina & Struktur Organisasi
+            </h2>
+
+            <!-- PELATIH & PEMBINA -->
+            <div class="grid grid-cols-2 gap-4 md:gap-8 mb-16">
+
+                <!-- Pelatih -->
+                <div class="bg-gray-100 p-4 md:p-6 rounded-xl text-center shadow">
+                    <div class="overflow-hidden rounded-full w-20 h-20 md:w-32 md:h-32 mx-auto mb-3">
+                        <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312745/IMG-20250720-WA0109.jpg_mepk6i.jpg"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold">Pelatih</h3>
+                    <p class="text-sm md:text-base text-gray-600">
+                        Danisworo Eka Saputra
+                    </p>
+                </div>
+
+                <!-- Pembina -->
+                <div class="bg-gray-100 p-4 md:p-6 rounded-xl text-center shadow">
+                    <div class="overflow-hidden rounded-full w-20 h-20 md:w-32 md:h-32 mx-auto mb-3">
+                        <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312768/IMG_20260624_183643_s7lucj.jpg"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold">Pembina Paskibra</h3>
+                    <p class="text-sm md:text-base text-gray-600">
+                        Afriliani Khusnul Khotijah
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ANGKATAN 2024 -->
+            <h3 class="text-2xl font-bold mb-6">Angkatan 2024</h3>
+            <div class="grid grid-cols-2 gap-4 md:gap-6 mb-12">
+
+                <!-- Ketua -->
+                <div class="bg-white shadow p-6 rounded-xl text-center border">
+
+                    <div class="overflow-hidden rounded-full w-20 h-20 md:w-32 md:h-32 mx-auto mb-3">
+                        <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312768/IMG-20250429-WA0036_qb9rr1.jpg"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+
+                    <h4 class="font-bold">Ketua Angkatan 24</h4>
+                    <p class="text-gray-600">Elsa Nuriyah</p>
+
+                </div>
+
+                <!-- Wakil -->
+                <div class="bg-white shadow p-6 rounded-xl text-center border">
+
+                    <div class="overflow-hidden rounded-full w-20 h-20 md:w-32 md:h-32 mx-auto mb-3">
+                        <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312768/IMG-20260624-WA0000_y4ozzh.jpg"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+
+                    <h4 class="font-bold">Wakil Angkatan 24</h4>
+                    <p class="text-gray-600">Kaila Aprilliyah</p>
+
+                </div>
+
+            </div>
+
+            <!-- ANGKATAN 2023 -->
+            <h3 class="text-2xl font-bold mb-6">Angkatan 2023</h3>
+            <div class="grid grid-cols-2 gap-4 md:gap-6 mb-12">
+
+                <!-- Ketua -->
+                <div class="bg-white shadow p-6 rounded-xl text-center border">
+
+                    <div class="overflow-hidden rounded-full w-20 h-20 md:w-32 md:h-32 mx-auto mb-3">
+                        <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312768/IMG-20260624-WA0005_uto1zg.jpg"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+
+                    <h4 class="font-bold">Ketua Angkatan 23</h4>
+                    <p class="text-gray-600">Daffa Dwi Putra</p>
+
+                </div>
+
+                <!-- Wakil -->
+                <div class="bg-white shadow p-6 rounded-xl text-center border">
+
+                    <div class="overflow-hidden rounded-full w-20 h-20 md:w-32 md:h-32 mx-auto mb-3">
+                        <img src="https://res.cloudinary.com/dt6tjq9d1/image/upload/v1782312768/IMG-20260624-WA0002_rgtjsr.jpg"
+                            class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+
+                    <h4 class="font-bold">Wakil Angkatan 23</h4>
+                    <p class="text-gray-600">Aenesta Maulana</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-gray-100">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-4">
+                FAQ
+            </h2>
+
+            <p class="text-gray-600 text-center mb-10">
+                Pertanyaan yang sering ditanyakan mengenai Paskibra SMKN 12 Jakarta.
+            </p>
+
+            <div class="space-y-4">
+
+                <!-- FAQ 1 -->
+                <div class="faq-item bg-white rounded-xl shadow overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                        Bagaimana cara bergabung dengan Paskibra?
+                        <span class="faq-icon text-2xl">+</span>
+                    </button>
+
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="px-5 pb-5 text-gray-600">
+                            Siswa yang ingin bergabung dengan Paskibra SMKN 12 Jakarta cukup melakukan pendaftaran
+                            sesuai informasi yang diumumkan oleh pengurus atau pembina pada awal periode penerimaan
+                            anggota.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item bg-white rounded-xl shadow overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                        Kapan jadwal latihan rutin dilaksanakan?
+                        <span class="faq-icon text-2xl">+</span>
+                    </button>
+
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="px-5 pb-5 text-gray-600">
+                            Latihan rutin Paskibra SMKN 12 Jakarta dilaksanakan setiap hari Kamis. Selain itu, menjelang
+                            perlombaan atau kegiatan khusus, akan dilaksanakan latihan intensif dengan jadwal yang
+                            disesuaikan berdasarkan kebutuhan organisasi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item bg-white rounded-xl shadow overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                        Apakah harus memiliki pengalaman sebelumnya?
+                        <span class="faq-icon text-2xl">+</span>
+                    </button>
+
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="px-5 pb-5 text-gray-600">
+                            Tidak. Seluruh anggota akan mendapatkan pelatihan dasar dan pembinaan secara bertahap.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item bg-white rounded-xl shadow overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                        Apa saja kegiatan yang dilakukan?
+                        <span class="faq-icon text-2xl">+</span>
+                    </button>
+
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="px-5 pb-5 text-gray-600">
+                            Kegiatan meliputi latihan baris-berbaris, pengibaran bendera, pelatihan kepemimpinan, lomba
+                            LKBB, dan kegiatan organisasi lainnya.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item bg-white rounded-xl shadow overflow-hidden">
+                    <button class="faq-btn w-full flex justify-between items-center p-5 text-left font-semibold">
+                        Apa manfaat mengikuti Paskibra?
+                        <span class="faq-icon text-2xl">+</span>
+                    </button>
+
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="px-5 pb-5 text-gray-600">
+                            Anggota akan belajar disiplin, tanggung jawab, kepemimpinan, kerja sama tim, serta
+                            meningkatkan rasa nasionalisme.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white pt-16 pb-8">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <!-- KOLOM 1 -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">PASKIBRA SMKN 12 JAKARTA</h2>
+
+                    <p class="text-gray-300 leading-7">
+                        Organisasi Pasukan Pengibar Bendera yang membentuk
+                        disiplin, karakter, dan jiwa nasionalisme generasi muda.
+                    </p>
+
+                    <!-- SOSMED ICON -->
+                    <div class="flex gap-4 mt-6">
+
+                        <a href="https://www.instagram.com/victorypaskibra12?igsh=MWNsdnNtbXdtanNkeA==" target="_blank"
+                            class="bg-white/10 hover:bg-pink-600 transition p-3 rounded-full">
+                            <span class="iconify text-2xl" data-icon="mdi:instagram"></span>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@victorypaskibra12?_r=1&_t=ZS-97EW9rZQPuK" target="_blank"
+                            class="bg-white/10 hover:bg-black transition p-3 rounded-full">
+                            <span class="iconify text-2xl" data-icon="ic:baseline-tiktok"></span>
+                        </a>
+
+                        <a href="mailto:paskibrasmkn12jkt@gmail.com" target="_blank"
+                            class="bg-white/10 hover:bg-red-600 transition p-3 rounded-full">
+                            <span class="iconify text-2xl" data-icon="mdi:email-outline"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- KOLOM 2 -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Kontak</h3>
+
+                    <p class="mb-2 flex items-center gap-2">
+                        <span class="iconify text-lg" data-icon="mdi:map-marker"></span>
+                        Jakarta, Indonesia
+                    </p>
+
+                    <p class="mb-2 flex items-center gap-2">
+                        <span class="iconify text-lg" data-icon="mdi:email"></span>
+                        <a href="mailto:paskibrasmkn12jkt@gmail.com">paskibrasmkn12jkt@gmail.com</a>
+                    </p>
+
+                    <p class="mb-2 flex items-center gap-2">
+                        <span class="iconify text-lg" data-icon="mdi:instagram"></span>
+                        <a
+                            href="https://www.instagram.com/victorypaskibra12?igsh=MWNsdnNtbXdtanNkeA==">@victorypaskibra12</a>
+                    </p>
+
+                    <p class="mb-2 flex items-center gap-2">
+                        <span class="iconify text-lg" data-icon="ic:baseline-tiktok"></span>
+                        <a
+                            href="https://www.tiktok.com/@victorypaskibra12?_r=1&_t=ZS-97EW9rZQPuK">@victorypaskibra12</a>
+                    </p>
+                </div>
+
+                <!-- KOLOM 3 (MAPS) -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Lokasi</h3>
+
+                    <div class="rounded-xl overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps?q=SMKN%2012%20Jakarta&output=embed" width="100%"
+                            height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER BOTTOM -->
+            <div class="border-t border-white/20 mt-10 pt-6 text-center text-gray-400 text-sm">
+                © 2026 Paskibra SMKN 12 Jakarta. All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
